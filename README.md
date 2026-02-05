@@ -1,0 +1,1 @@
+# loup-garou-2026-V6
