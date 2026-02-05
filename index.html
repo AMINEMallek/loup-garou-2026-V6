@@ -777,9 +777,6 @@
                 console.log('✅ Vote enregistré:', voter.id, '->', targetId);
                 console.log('🗳️ leaderVotes:', newGameState.leaderVotes);
 
-                // Réinitialiser la sélection après le vote
-                setSelectedLeader(null);
-
                 try {
                     await db.ref(`rooms/${roomCode}/gameState`).set(newGameState);
                     console.log('✅ Firebase mis à jour');
